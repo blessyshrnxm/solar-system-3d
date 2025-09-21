@@ -7,6 +7,7 @@ import { RenderPass } from 'three/addons/postprocessing/RenderPass.js';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 import { OutlinePass } from 'three/addons/postprocessing/OutlinePass.js';
 import asteroidPack from './asteroids/asteroidPack.glb';
+import bgMusic from './audio/young.mp3';
 import bgTexture1 from '/images/1.jpg';
 import bgTexture2 from '/images/2.jpg';
 import bgTexture3 from '/images/3.jpg';
@@ -58,11 +59,12 @@ const audioLoader = new THREE.AudioLoader();
 
 // Use the imported file
 audioLoader.load(bgMusic, function(buffer) {
-  console.log("✅ Audio file loaded from src/audio!");
-  bgSound.setBuffer(buffer);
-  bgSound.setLoop(true);
-  bgSound.setVolume(0.9);
+    bgSound.setBuffer(buffer);
+    bgSound.setLoop(true);
+    bgSound.setVolume(0.9);
+    bgSound.play();
 });
+
 
 // Browsers need user interaction before audio plays
 window.addEventListener('click', () => {
