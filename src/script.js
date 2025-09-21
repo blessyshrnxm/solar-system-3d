@@ -49,7 +49,6 @@ var camera = new THREE.PerspectiveCamera( 45, window.innerWidth/window.innerHeig
 camera.position.set(-175, 115, 5);
 
 // At the top of script.js
-import bgMusic from './audio/young.mp3';
 
 const listener = new THREE.AudioListener();
 camera.add(listener);
