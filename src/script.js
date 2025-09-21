@@ -1228,7 +1228,6 @@ loadAsteroids('/asteroids/asteroidPack.glb', 3000, 130, 160);
 loadAsteroids('/asteroids/asteroidPack.glb', 6000, 352, 370);
 
 
-
 // Earth day/night effect shader material
 const earthMaterial = new THREE.ShaderMaterial({
   uniforms: {
