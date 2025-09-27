@@ -164,3 +164,13 @@ p {
   font-size: 14px;
   color: #fff;
 }
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: black; /* optional, makes the border blend with space */
+}
+
+canvas {
+  display: block;   /* removes extra bottom space */
+}

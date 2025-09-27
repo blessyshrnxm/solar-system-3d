@@ -6,8 +6,8 @@ import { UnrealBloomPass } from 'three/addons/postprocessing/UnrealBloomPass.js'
 import { RenderPass } from 'three/addons/postprocessing/RenderPass.js';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 import { OutlinePass } from 'three/addons/postprocessing/OutlinePass.js';
-import asteroidPackUrl from './asteroids/asteroidPack.glb?url';
-import bgMusicUrl from './audio/young.mp3?url';
+//import asteroidPackUrl from './asteroids/asteroidPack.glb?url';
+//import bgMusicUrl from './audio/young.mp3?url';
 import bgTexture1 from '/images/1.jpg';
 import bgTexture2 from '/images/2.jpg';
 import bgTexture3 from '/images/3.jpg';
@@ -57,13 +57,19 @@ const bgSound = new THREE.Audio(listener);
 const audioLoader = new THREE.AudioLoader();
 
 // Use the imported file
-audioLoader.load(bgMusicUrl, function(buffer) {
+/*audioLoader.load(bgMusicUrl, function(buffer) {
     bgSound.setBuffer(buffer);
     bgSound.setLoop(true);
     bgSound.setVolume(0.9);
     bgSound.play();
 });
-
+*/
+audioLoader.load('/audio/young.mp3', function(buffer) {
+    bgSound.setBuffer(buffer);
+    bgSound.setLoop(true);
+    bgSound.setVolume(0.9);
+    bgSound.play();
+});
 
 // Browsers need user interaction before audio plays
 window.addEventListener('click', () => {
@@ -1225,11 +1231,13 @@ function loadAsteroids(path, numberOfAsteroids, minOrbitRadius, maxOrbitRadius) 
 
 // Main asteroid belt (between Mars & Jupiter)
 // Main asteroid belt (between Mars & Jupiter)
-loadAsteroids(asteroidPackUrl, 3000, 130, 160);
+//loadAsteroids(asteroidPackUrl, 3000, 130, 160);
 
 // Kuiper belt (beyond Neptune)
-loadAsteroids(asteroidPackUrl, 6000, 352, 370);
+//loadAsteroids(asteroidPackUrl, 6000, 352, 370);
 
+loadAsteroids('/asteroids/asteroidPack.glb', 3000, 130, 160);
+loadAsteroids('/asteroids/asteroidPack.glb', 6000, 352, 370);
 
 // Earth day/night effect shader material
 const earthMaterial = new THREE.ShaderMaterial({
