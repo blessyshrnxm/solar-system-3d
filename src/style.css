@@ -174,3 +174,34 @@ html, body {
 canvas {
   display: block;   /* removes extra bottom space */
 }
+/* 📱 Mobile Responsive Adjustments */
+@media (max-width: 768px) {
+  .planet-info {
+    width: 90%;
+    left: 5%;
+    top: 10%;
+  }
+
+  .planet-info-content {
+    font-size: 14px;
+    padding: 15px;
+  }
+
+  #splitButton {
+    font-size: 12px;
+    padding: 8px 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .planet-info {
+    width: 95%;
+    left: 2.5%;
+    top: 5%;
+  }
+
+  .planet-info-content {
+    font-size: 12px;
+    padding: 10px;
+  }
+}
