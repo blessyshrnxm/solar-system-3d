@@ -1,78 +1,51 @@
-# 3D Solar System in THREE.js
+# 3D Solar System in THREE.js  
 
-Welcome to the **3D Solar System** project, a dynamic and interactive simulation of our solar system created using THREE.js and the Vite framework.  
-This project showcases advanced features and effects to provide an immersive experience of the celestial bodies in our solar system.  
+An interactive 3D simulation of the solar system built with **Three.js** and **Vite**, designed as part of a final-year AR/VR project.  
 
-Originally created by [Karol Fryc (N3rson)](https://github.com/N3rson/Solar-System-3D) and modified by [Blessy Sharon](https://github.com/blessyshrnxm).
+Originally forked from [Karol Fryc (N3rson)](https://github.com/N3rson/Solar-System-3D), this project was **extended and customized** by [Blessy Sharon](https://github.com/blessyshrnxm) with the following contributions:  
 
----
-
-![Solar_System](images/solar_system.png)  
-![Earth](images/earthnew.png)  
-![Mercury](images/mercury.png)  
-![Mars](images/mars.png)  
+- Added **interactive planetary core exploration** (crust, mantle, core layers with details on click).  
+- Designed **educational UI panels** to display planetary facts for students.  
+- Integrated feedback from **college exhibition demo** to improve usability.  
+- Led a **5-member team**, coordinating tasks and ensuring timely delivery.  
+- Deployed live via Vercel for public access and testing.  
 
 ---
 
-## Features
+## Features  
 
-### Standard Setup
-- **Scene, Camera, Renderer**: Core setup for rendering 3D scenes.
-- **Controls**: Interactive navigation.
-- **Texture Loaders**: Efficient loading of planet/moon textures.
+### Core Setup  
+- **Scene, Camera, Renderer** for dynamic 3D rendering.  
+- **Orbit Controls** for smooth navigation.  
+- **Texture Loaders** for planets and moons.  
 
-### Postprocessing Effects
-- **BloomPass**: Adds a glowing effect to the Sun.
-- **OutlinePass**: Highlights planets when hovered.
-- **EffectComposer**: Combines and manages postprocessing effects.
+### Custom Modifications  
+- **Planetary Layer Interaction**: Click planets to view internal structures.  
+- **Educational Information Panels**: Interactive UI to display facts and details.  
+- **Optimized for Demonstration**: Tested and refined for an exhibition audience.  
 
-### Star Background
-- Realistic starry sky backdrop.
-
-### Interactive Controls
-- **dat.GUI**: Adjust orbit speed and Sun glow intensity.
-
-### Lighting
-- **AmbientLight**: Soft, global illumination.
-- **PointLight**: Sunlight casting realistic shadows.
-
-### Detailed Planet Creation
-- **Attributes**: Size, tilt, texture, bump maps, rings, atmospheres.
-- **Moons**: With realistic textures and orbits.
-- **Earth Shader**: Day/night transitions and clouds.
-- **Non-Spherical Moons**: Phobos & Deimos from 3D models.
-
-### Realistic Orbits and Rotations
-- Accurate orbital motion and axial rotation.
-- Scaled sizes for visual balance.
-
-### Shadows
-- Realistic shadows from Sun’s PointLight.
-
-### Asteroid Belts
-- **Procedurally Generated**:  
-  - 1000 asteroids (between Mars & Jupiter).  
-  - 3000 asteroids (Kuiper belt).  
-- **Performance Optimized**.
-
-### Select Feature
-- Hover outlines planets.
-- Zoom in for details on click.
-- Zoom out on close.
+### Visual & Performance Enhancements  
+- **BloomPass and OutlinePass** for immersive glow and hover effects.  
+- **Earth Shader** with day/night cycles and atmosphere.  
+- **Asteroid Belts** (3,000+ objects) generated procedurally.  
+- **PointLight + Shadows** for realistic illumination.  
 
 ---
 
-## Resources
-
-Textures and 3D assets from:
-- [NASA 3D Resources](https://nasa3d.arc.nasa.gov/images)  
-- [Solar System Scope Textures](https://www.solarsystemscope.com/textures/)  
-- [Planet Pixel Emporium](https://planetpixelemporium.com/index.php)  
-- [TurboSquid](https://www.turbosquid.com/)  
+## Tech Stack  
+- **Three.js** (3D rendering)  
+- **JavaScript, HTML5, CSS3**  
+- **Vite** (bundler)  
+- **Deployment**: Vercel  
 
 ---
 
-## Installation and Setup
+## Live Demo  
+[3D Solar System Simulation](https://solar-system-3d-arvr.vercel.app/)  
+
+---
+
+## Installation and Setup  
 
 ```sh
 # 1. Clone the repository
